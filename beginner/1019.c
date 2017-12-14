@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+  int n, h, m, s;
+  scanf("%d", &n);
+  h = n / 60 / 60;
+  m = n / 60 - h * 60;
+  s = n - n / 60 * 60;
+  printf("%d:%d:%d\n", h, m, s);
+  return 0;
+}
